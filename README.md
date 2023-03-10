@@ -17,6 +17,7 @@ as shown below:
 
 ```
 git clone https://github.com/zebrunner/nunit-agent-samples.git &&
+cd nunit-sample-demo &&
 nuget restore NunitAgentSample.sln &&
 msbuild
 ```
@@ -45,7 +46,6 @@ The `zebrunner-env` file holds all the required configuration to enable reportin
     - `REPORTING_SERVER_HOSTNAME` with your Zebrunner workspace;
     - `REPORTING_SERVER_ACCESS_TOKEN` with `token` from step #2;
     - `REPORTING_PROJECT_KEY` with `KEY` from step #3 (if not defined, `DEF` will be used by default);
-    - `REPORTING_RUN_DISPLAY_NAME` with launch name you wish to see in Zebrunner.
 
 #### **`zebrunner-env`**
 ```
@@ -55,7 +55,6 @@ export REPORTING_SERVER_HOSTNAME=_server_hostname_
 export REPORTING_SERVER_ACCESS_TOKEN=_token_
 export REPORTING_ENABLED=true
 export REPORTING_PROJECT_KEY=_key_
-export REPORTING_RUN_DISPLAY_NAME=_run_name_
 export REPORTING_RUN_BUILD=0.0.0.1-SNAPSHOT
 export REPORTING_RUN_ENVIRONMENT=DEMO_NUnit
 
