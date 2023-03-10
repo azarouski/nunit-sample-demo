@@ -1,0 +1,12 @@
+#!/bin/bash
+export REPORTING_SERVER_HOSTNAME=_server_hostname_
+# demo token below is auto-generated and will expire in 60 minutes
+export REPORTING_SERVER_ACCESS_TOKEN=_token_
+export REPORTING_ENABLED=true
+export REPORTING_PROJECT_KEY=_key_
+export REPORTING_RUN_DISPLAY_NAME=_run_name_
+export REPORTING_RUN_BUILD=0.0.0.1-SNAPSHOT
+export REPORTING_RUN_ENVIRONMENT=DEMO_NUnit
+
+alias nunit3-console="mono packages/NUnit.ConsoleRunner.3.16.3/tools/nunit3-console.exe"
+PS1="[Zebrunner-env] $ "
